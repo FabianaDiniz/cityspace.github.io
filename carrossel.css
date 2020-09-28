@@ -1,0 +1,29 @@
+* {padding: 0; margin: 0; border: 0; box-sizing: border-box;}
+.class {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+#item-wrapper {
+    width: 50vw;
+
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#items {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+.item {
+    flex: none;
+    width: 100%;
+    height: 400px;
+    scroll-snap-align: start;
+    pointer-events: none;
+}
